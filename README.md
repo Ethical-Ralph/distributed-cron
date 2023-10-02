@@ -2,7 +2,7 @@
 
 A resilient and scalable architecture for managing scheduled tasks across multiple machines.
 
-![Distributed Cron System Architecture](https://cdn.hashnode.com/res/hashnode/image/upload/v1696004917836/ad22aba1-4fca-4b61-8c38-bcc2ff408509.png?auto=compress,format&format=webp)
+![Distributed Cron System Architecture](./arch-image.png)
 
 For a detailed explanation and reasoning behind the architecture and design choices, please refer to this [article](https://blog.ethicalralph.me/cron-jobs-at-scale-using-mongodb-redis-and-kafka).
 
