@@ -28,11 +28,11 @@ const consumeAndRunJobs = async () => {
       try {
         await jobFunction(job);
 
-        await JobSchedule.updateOne({ job: job._id }, { status: "success" });
+        await JobSchedule.updateOne({ _id: job._id }, { status: "success" });
       } catch (error) {
         console.error(`Failed to run job ${job._id}:`, error);
 
-        await JobSchedule.updateOne({ job: job._id }, { status: "failed" });
+        await JobSchedule.updateOne({ _id: job._id }, { status: "failed" });
       }
     },
   });
